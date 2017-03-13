@@ -1,32 +1,12 @@
 package Main;
 
-import javax.swing.*;
 import javax.swing.table.AbstractTableModel;
-import java.awt.*;
-import java.awt.Dimension;
-
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import java.util.Objects;
-
 
 public class ModelTable extends AbstractTableModel{
 
-
     private int columnCount = 2;
     private ArrayList<String []> list = new ArrayList<String []>();
-
-    /*
-    public ModelTable()
-    {
-        list = new ArrayList<String []>();
-        for(int i = 0 ; i < list.size(); i++)
-        {
-            list.add(new String[getColumnCount()]);
-        }
-    }
-    */
 
     public int getRowCount()
     {
@@ -65,8 +45,4 @@ public class ModelTable extends AbstractTableModel{
         row[1] = "";
         fireTableDataChanged();
     }
-
-
-
-
 }
