@@ -10,11 +10,12 @@ public class Task1 {
 
     private JComboBox<String> combobox= new JComboBox<>();
     private JTextField text1Field = new JTextField(10);
-    private JButton Mybutton = new JButton("Добавить строку");
+    public JButton Mybutton = new JButton(" Добавить строку ");
 
-
-    public Object Add_str(JPanel p)
+    public JPanel create()
     {
+        JPanel p = new JPanel();
+
         p.setLayout(new GridBagLayout());
 
         p.add(text1Field, new GridBagConstraints(0, 0, 1, 1, 1, 1,

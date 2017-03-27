@@ -9,13 +9,14 @@ import java.awt.event.ActionListener;
 public class Task4 {
 
     private JTextField text1Field = new JTextField(10);
-    private JCheckBox checkbox1 = new JCheckBox("privet");
-    private JCheckBox checkbox2 = new JCheckBox("kak dela");
-    private JCheckBox checkbox3 = new JCheckBox("poka");
-    private JButton Mybutton = new JButton("Действие");
+    private JCheckBox checkbox1 = new JCheckBox("one");
+    private JCheckBox checkbox2 = new JCheckBox("two");
+    private JCheckBox checkbox3 = new JCheckBox("three");
+    public JButton Mybutton = new JButton(" Действие ");
 
-    public Object Selection(JPanel p)
+    public JPanel selection()
     {
+        JPanel p = new JPanel();
 
         p.setLayout(new GridBagLayout());
 
@@ -44,6 +45,11 @@ public class Task4 {
 
     public class MyButtonActionListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
+
+            checkbox1.setSelected(false);
+            checkbox2.setSelected(false);
+            checkbox3.setSelected(false);
+
             if (text1Field.getText().trim().isEmpty()) {
             } else {
 
@@ -68,8 +74,8 @@ public class Task4 {
                     str1 = str2;
                 }
 
-                if (str1.trim().isEmpty()) {
-                } else
+                if (str1.trim().isEmpty()) {}
+                else
                     JOptionPane.showMessageDialog(new JFrame(), "Элемента " + str1.trim() + " не существует");
             }
 

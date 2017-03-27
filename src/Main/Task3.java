@@ -12,11 +12,13 @@ public class Task3 {
     private JRadioButton radiobutton1 = new JRadioButton("a");
     private JRadioButton radiobutton2 = new JRadioButton("b");
     private JRadioButton radiobutton3 = new JRadioButton("c");
-    private JButton Mybutton = new JButton("Выполнить действие");
+    public JButton Mybutton = new JButton(" Выполнить действие ");
     private JTextField text1Field = new JTextField(10);
 
 
-    public Object Init(JPanel p) {
+    public JPanel init() {
+
+        JPanel p = new JPanel();
 
         p.setLayout(new GridBagLayout());
 

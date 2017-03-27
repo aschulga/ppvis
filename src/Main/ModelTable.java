@@ -32,6 +32,7 @@ public class ModelTable extends AbstractTableModel{
 
     public void Move(int rowIndex)
     {
+
         String []row = list.get(rowIndex);
         row[1] = row[0];
         row[0] = "";

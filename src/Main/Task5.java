@@ -9,9 +9,9 @@ import java.awt.event.ActionListener;
 public class Task5 {
 
     private JTextField text1Field = new JTextField(10);
-    private JButton addbutton = new JButton("Добавить");
-    private JButton movebutton = new JButton("Переместить");
-    private JButton backmovebutton = new JButton("Переместить обратно");
+    public JButton addbutton = new JButton(" Добавить ");
+    public JButton movebutton = new JButton(" Переместить  ");
+    public JButton backmovebutton = new JButton(" Переместить обратно ");
 
     ModelTable model = new ModelTable();
 
@@ -19,8 +19,9 @@ public class Task5 {
     JScrollPane jsp = new JScrollPane(table);
 
 
-    public Object ActionsTable(JPanel p)
+    public JPanel actionsTable()
     {
+        JPanel p = new JPanel();
 
         p.setLayout(new GridBagLayout());
 

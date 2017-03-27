@@ -9,11 +9,13 @@ import java.awt.event.ActionListener;
 public class Task2 {
 
     private JTextField text1Field = new JTextField(10);
-    private JButton Mybutton1 = new JButton("Переместить");
-    private JButton Mybutton2 = new JButton("Кнопка");
+    public JButton Mybutton1 = new JButton(" Переместить ");
+    public JButton Mybutton2 = new JButton(" Кнопка ");
 
-    public Object Replacement(JPanel p)
+    public JPanel replacement()
     {
+        JPanel p = new JPanel();
+
         p.setLayout(new GridBagLayout());
 
         p.add(text1Field, new GridBagConstraints(0, 0, 1, 1, 1, 1,
